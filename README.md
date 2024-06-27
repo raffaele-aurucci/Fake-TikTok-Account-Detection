@@ -1,3 +1,1 @@
-# FakeAccountDetection
-
-test
+# Fake Account Detection
