@@ -1,1 +1,6 @@
+# colab file
 .ipynb_checkpoints
+
+# ide files
+.idea
+venv
