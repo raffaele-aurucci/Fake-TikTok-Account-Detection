@@ -17,6 +17,7 @@ Project of course **Fondamenti di Data Science & Machine Learning** - University
    - [Cloning the Repository](#cloning-the-repository)
    - [Creating the Virtual Environment](#creating-the-virtual-environment)
    - [Installing Requirements](#installing-requirements)
+5. [Citation](#citation)
 
 # Introduction
 The issue of fake accounts on social networks remains widespread, representing a significant threat to the security and integrity of online platforms. This project focuses on detecting fake accounts on the emerging social platform TikTok, which has experienced exponential growth in recent years.
@@ -76,5 +77,17 @@ To install the requirements, please:
 2. Install the project requirements using `pip`:
 ```shell 
 pip install -r requirements.txt
+```
+
+## Citation 
+
+If you have have found this work useful and have decided to include it in your work, please consider citing
+```BibTeX
+@online{aurucci-miglino2024:fake-tiktok-account-detection,
+    author={Raffaele Aurucci, Annalaura Miglino}, 
+    title = {Fake TikTok Account Detection},
+    url={https://github.com/raffaele-aurucci/Fake-TikTok-Account-Detection},
+    year={2024}
+}
 ```
 
