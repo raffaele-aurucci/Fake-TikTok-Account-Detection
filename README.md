@@ -30,7 +30,7 @@ Afterwards, we trained different ML models: Support Vector Machine (SVM), K-Near
 3. training with added features to the original dataset after discovering relaxed functional dependencies (RFDs) following the feature engineering strategy proposed in this [research work](https://doi.org/10.1145/3625097).  
 
 # Experimental Results
-The table below shows the performance of the algorithms after training with the default hyperparameters (refer to point 1 in the previous section).
+The table below shows the performance of the algorithms after training with the default hyperparameters (see point 1 of the previous section).
 
 | **Classifier**      | **Accuracy** | **F1-Score** | **Precision** | **Recall** |
 |---------------------|--------------|--------------|---------------|------------|
