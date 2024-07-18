@@ -32,13 +32,13 @@ Afterwards, we trained different ML models: Support Vector Machine (SVM), K-Near
 # Experimental Results
 The table below shows the performance of the algorithms after training with the default hyperparameters (refer to point 1 in the previous section).
 
-| **Classificatore**    | **Accuracy** | **F1-Score** | **Precision** | **Recall** |
-|-----------------------|--------------|--------------|---------------|------------|
-| Logistic Regression   | 0.935        | 0.938        | 0.899         | 0.980      |
-| SVM                   | 0.965        | 0.966        | 0.954         | 0.978      |
-| KNN                   | 0.981        | 0.981        | 0.974         | 0.989      |
-| Decision Tree         | 0.998        | 0.998        | 0.997         | 0.999      |
-| Random Forest         | 0.999        | 0.999        | 0.998         | 1.000      |
+| **Classifier**      | **Accuracy** | **F1-Score** | **Precision** | **Recall** |
+|---------------------|--------------|--------------|---------------|------------|
+| Logistic Regression | 0.935        | 0.938        | 0.899         | 0.980      |
+| SVM                 | 0.965        | 0.966        | 0.954         | 0.978      |
+| KNN                 | 0.981        | 0.981        | 0.974         | 0.989      |
+| Decision Tree       | 0.998        | 0.998        | 0.997         | 0.999      |
+| Random Forest       | 0.999        | 0.999        | 0.998         | 1.000      |
 
 In the following table, we present the performance of the algorithms after the Hyperparameter Tuning step (see point 2 of the previous section).
 
