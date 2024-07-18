@@ -78,8 +78,3 @@ To install the requirements, please:
 pip install -r requirements.txt
 ```
 
-# License
-This project is distributed under the [GNU General Public License v3](LICENSE).
-
-![GPLv3Logo](https://www.gnu.org/graphics/gplv3-127x51.png)
-
