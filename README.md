@@ -22,7 +22,7 @@ Project of course **Fondamenti di Data Science & Machine Learning** - University
 The issue of fake accounts on social networks remains widespread, representing a significant threat to the security and integrity of online platforms. This project focuses on detecting fake accounts on the emerging social platform TikTok, which has experienced exponential growth in recent years.
 
 # Methodology
-This work propose a Machine Learning (ML) pipeline to detect fake TikTok accounts. We used a dataset created with [TikAPI](https://tikapi.io/) containing 10.043 accounts (5.029 fake and 5.014 real). The dataset includes information such as *diggCount*, *heartCount*, *followerCount*, *followingCount*, *videoCount*, *signature*, etc., and label *fake* (True or Real).  
+This work presents a Machine Learning (ML) pipeline for detecting fake TikTok accounts. We used a dataset created with [TikAPI](https://tikapi.io/) containing 10.043 accounts (5.029 fake and 5.014 real). The dataset includes information such as *diggCount*, *heartCount*, *followerCount*, *followingCount*, *videoCount*, *signature*, etc., and label *fake* (True or Real).  
 In the preprocessing step, we transformed all textual and boolean features in numerical features and then scaled the data using *z-score normalization*.  
 Afterwards, we trained different ML models: Support Vector Machine (SVM), K-Nearest-Neighbor (KNN), Logistic Regression, Decision Tree and Random Forest, and then evaluated the algorithm performance under three conditions:
 1. training with default hyperparameters (defined in [Scikit-Learn](https://scikit-learn.org/stable/index.html));
