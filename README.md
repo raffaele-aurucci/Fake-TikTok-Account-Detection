@@ -28,7 +28,9 @@ In the preprocessing step, we transformed all textual and boolean features in nu
 Afterwards, we trained different ML models: Support Vector Machine (SVM), K-Nearest-Neighbor (KNN), Logistic Regression, Decision Tree and Random Forest, and then evaluated the algorithm performance under three conditions:
 1. training with default hyperparameters (defined in [Scikit-Learn](https://scikit-learn.org/stable/index.html));
 2. training with hyperparameters tuning using Grid Search and K-Fold Cross Validation;
-3. training with added features to the original dataset after discovering relaxed functional dependencies (RFDs) following the feature engineering strategy proposed in this [research work](https://doi.org/10.1145/3625097).  
+3. training using two different feature sets after discovering Relaxed Functional Dependencies (RFDs), following the feature engineering strategy proposed in this [research work](https://doi.org/10.1145/3625097):
+   - Only RFDs: training using only the added features identified through the RFD process, excluding the original dataset features.
+   - Baseline + RFDs: training with the original dataset features along with the added features identified through the RFD process.
 
 # Experimental Results
 The table below shows the performance of the algorithms after training with the default hyperparameters (see point 1 of the previous section).
@@ -50,6 +52,27 @@ In the following table, we present the performance of the algorithms after the H
 | KNN                | 0.986        | 0.986        | 0.979         | 0.993      |
 | Decision Tree      | 0.998        | 0.998        | 0.997         | 0.999      |
 | Random Forest      | 0.998        | 0.998        | 0.998         | 0.999      |
+
+In the following table, we present the mean performance of the algorithms after considering Only RFDs (see point 3 of the previous section).
+
+| **Classifier**      | **Accuracy** | **F1-Score** | **Precision** | **Recall** |
+|---------------------|--------------|--------------|---------------|------------|
+| Logistic Regression | 0.491        | 0.383        | 0.629         | 0.490      |
+| SVM                 | 0.600        | 0.522        | 0.778         | 0.600      |
+| KNN                 | 0.763        | 0.735        | 0.829         | 0.763      |
+| Decision Tree       | 0.763        | 0.735        | 0.829         | 0.763      |
+| Random Forest       | 0.763        | 0.735        | 0.829         | 0.763      |
+
+Finally, in the table below, we present the mean performance of the algorithms after considering Baseline + RFDs (see point 3 of the previous section).
+
+| **Classifier**      | **Accuracy** | **F1-Score** | **Precision** | **Recall** |
+|---------------------|--------------|--------------|---------------|------------|
+| Logistic Regression | 0.946        | 0.928        | 0.930         | 0.928      |
+| SVM                 | 0.987        | 0.987        | 0.982         | 0.987      |
+| KNN                 | 0.990        | 0.986        | 0.986         | 0.986      |
+| Decision Tree       | 0.974        | 0.996        | 0.996         | 0.996      |
+| Random Forest       | 0.994        | 0.998        | 0.998         | 0.998      |
+
 
 # Installation Guide
 To install the necessary requirements for the project, please follow the steps below.
